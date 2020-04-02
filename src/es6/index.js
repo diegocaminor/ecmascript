@@ -61,3 +61,48 @@ console.log(globalVar);
 
 const a = 'b'; // no puede cambiar el valor más adelante debido a que es una constante
 console.log(a);
+
+let firstName = 'Diego'
+let myAge = 26
+
+// es5
+obj = { firstName: firstName, myAge: myAge }
+// es6
+obj2 = { firstName, myAge }
+console.log(obj2);
+
+const names = [
+    { name: 'Oscar', age: 32 },
+    { name: 'Yesica', age: 27 }
+]
+
+// antes de es6
+let listOfNames = names.map(function (item) {
+console.log(item.name);
+})
+// es6
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfNames3 = (name, age, country) => {
+// ...
+}
+
+const listOfNames4 = name => {
+// ...
+}
+
+const square = num => num * num;
+
+const helloPromise = () => {
+  return new Promise((resolve, reject) => {
+    if (false) {
+      resolve('Hey!');
+    } else {
+      reject('Ups!!');
+    }
+  });
+}
+
+helloPromise()
+  .then(response => console.log(response))
+  .catch(error => console.log(error));
