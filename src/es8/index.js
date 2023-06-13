@@ -1,13 +1,15 @@
-// ECMAScript 8(2017)
-// At the TC39 meeting in January 2017, the last feature of ECMAScript 2017, “Shared memory and atomics” .
-// Major new features:
-// Async Functions (Brian Terlson)
-// Shared memory and atomics (Lars T. Hansen)
-// Minor new features:
-// Object.values/Object.entries/Object.keys (Jordan Harband)
-// String padding (Jordan Harband, Rick Waldron)
-// Object.getOwnPropertyDescriptors() (Jordan Harband, Andrea Giammarchi)
-// Trailing commas in function parameter lists and calls (Jeff Morrison)
+/* ECMAScript 8(2017)
+At the TC39 meeting in January 2017, the last feature of ECMAScript 2017, “Shared memory and atomics” .
+Major new features:
+ 1. Async Functions (Brian Terlson)
+ 2. Shared memory and atomics (Lars T. Hansen)
+ 3. Minor new features:
+ 4. Object.values/Object.entries/Object.keys (Jordan Harband)
+ 5. String padding (Jordan Harband, Rick Waldron)
+ 6. Object.getOwnPropertyDescriptors() (Jordan Harband, Andrea Giammarchi)
+ 7. Trailing commas in function parameter lists and calls (Jeff Morrison)
+*/
+
 const data = {
   frontend: "Oscar",
   backend: "ISabel",
