@@ -1,6 +1,6 @@
 /* ecmascript6 nace en 2015
  ES6 includes the following new features:
- 1. arrows
+ 1. arrows function
  2. classes
  3. enhanced object literals
  4. template strings
@@ -22,6 +22,7 @@
  20. reflect api
  21. tail calls
 */
+
 // antes es6
 function newFunction(name, age, country) {
   var name = name || "oscar";
@@ -130,6 +131,7 @@ helloPromise()
   .then((response) => console.log(response))
   .catch((error) => console.log(error));
 
+// 2. classes
 class calculator {
   constructor() {
     this.valueA = 0;
