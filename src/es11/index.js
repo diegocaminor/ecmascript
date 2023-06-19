@@ -1,25 +1,15 @@
 /* ECMAScript 11 (Junio, 2020)
- 1. Private Class Variables
- 2. Promise.allSettled
- 3. String.prototype.matchAll
- 4. Optional Chaining Operator
- 5. Dynamic Import
- 6. BigInt
- 7. Nullish cocoalescing
- 8. globalThis
+ 1. Promise.allSettled
+ 2. String.prototype.matchAll
+ 3. Optional Chaining Operator
+ 4. Dynamic Import
+ 5. BigInt
+ 6. Nullish cocoalescing
+ 7. globalThis
 */
 
-//  1. Private Class Variables
-class Person {
-    #born = 1980
-    age() { console.log(2020 - this.#born) }
-}
-const person1 = new Person()
-person1.age() // 40
-console.log(person1.#born) //Uncaught SyntaxError: Private field '#born' must be declared in an enclosing class
 
-
-// 2. Promise.allSettled
+// 1. Promise.allSettled
 // La diferencia clave es que Promise.allSettled devuelve un array con los resultados de todas las promesas,
 // independientemente de si se resolvieron o se rechazaron, mientras que Promise.all se rechaza inmediatamente
 // si alguna de las promesas se rechaza y solo se resuelve cuando todas las promesas se resuelven correctamente.
@@ -35,7 +25,7 @@ Promise.allSettled([promiseOne, promiseTwo]).then(data => console.log(data));
 //length: 2
 
 
-// 3. String.prototype.matchAll
+// 2. String.prototype.matchAll
 const regexp = /g(ro)(up(\d?))/g;
 const groups = 'group1group2group3';
 console.table(groups.match(regexp));
@@ -53,7 +43,7 @@ console.table(array)
 //length: 3
 
 
-// 4. Optional Chaining Operator
+// 3. Optional Chaining Operator
 const users = {
   gndx: {
     country: "MX",
@@ -66,7 +56,7 @@ const users = {
 console.log(users.bebeloper?country);
 
 
-// 5. Dynamic Import
+// 4. Dynamic Import
 import * as greet from './ greetings.module.js';
 greet.hello();
 //Hello World!
@@ -78,7 +68,7 @@ import('./greetingsModule.js').then( (greet) => {
          });
 }
 
-// 6. BigInt
+// 5. BigInt
 console.log(Number.MAX_SAFE_INTEGER);
 //9007199254740991
 const max = Number.MAX_SAFE_INTEGER;
@@ -97,7 +87,7 @@ console.log(myBigNumber +10);
 //Correct way: You have to add the letter 'n' on the end of the //number
 
 
-// 7. Nullish cocoalescing
+// 6. Nullish cocoalescing
 const number = 1;
 const validate = number ?? 5;
 console.log(validate); //! 1
@@ -106,7 +96,7 @@ const validateNull = nullExample ?? 5;
 console.log(validateNull); //! 5
 
 
-// 8. globalThis
+// 7. globalThis
 console.log(window); // navegador
 console.log(global);  // node
 console.log(self);// webworker
