@@ -1,0 +1,1 @@
+export hello () => console.log("Hello World!");
