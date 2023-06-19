@@ -5,6 +5,7 @@
 
 // 1. Top-level await
 // Before ES2022
+
 await Promise.resolve(console.log("Inkoop"));
 // SyntaxError: await is only valid in async function
 const print = async () => {
