@@ -3,7 +3,7 @@
  2. String replaceAll()
  3. Logical assignment operator
  4. Promise.any
- 5. Private class methods
+ 5. Private class Variables
  6. Private getters and setters
  7. WeakRef
 */
